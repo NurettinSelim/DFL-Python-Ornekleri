@@ -13,4 +13,18 @@ def belge_bul():
     else:
         print("geçersiz giriş")
 
+def harflere_ayir(kelime):
+    for harf in kelime:
+        print(harf)
+
+def tekrarla(ad):
+    a=0
+    while a < 10:
+        a = a + 1
+        print(ad)
+
 belge_bul()
+
+harflere_ayir("fonksiyonlar")
+
+tekrarla("Nurettin")
