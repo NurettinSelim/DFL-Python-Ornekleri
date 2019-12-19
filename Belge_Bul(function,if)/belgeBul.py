@@ -1,18 +1,17 @@
 #Karne ortalamanıza göre hangi belge 
 #alacağınızı bulan fonksiyon
-def belge_bul():
-    puan = int(input("Karne ortalamanızı girin:"))
+def belge_bul(puan):
     if puan < 0:
-        print("0'dan küçük not olamaz!")
+        return "0'dan küçük not olamaz!"
     elif puan < 50:
-        print("Belge alamadınız.")
+        return "Belge alamadınız."
     elif puan <= 85:
-        print("Teşekkür belgesi aldınız.")        
+        return "Teşekkür belgesi aldınız."       
     elif puan <= 100:
-        print("Takdir belgesi aldıın :)")
+        return "Takdir belgesi aldıın :)"
     elif puan > 100:
-        print("100'den yüksek alamazsın")
+        return "100'den yüksek alamazsın"
     else:
-        print("geçersiz giriş")
+        return "geçersiz giriş"
 		
-belge_bul()
+print(belge_bul(85))
